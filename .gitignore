@@ -1,0 +1,18 @@
+.env
+.air.toml
+*.log
+
+# compiled binary files
+*.exe
+*.exe~
+*.o
+*.out
+
+# executables
+/bin/
+/tmp/
+
+go.sum
+
+.vscode/
+
