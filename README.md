@@ -28,7 +28,7 @@ A postman collection is provided in `docs/postman_collection.json`
 first copy paste the .env.example file to .env and change the values accordingly to your database configuration
 
 To run the API, navigate to the `cmd/api` directory and execute the following command:
-`go run main.go`
+```go run main.go```
 
 The API will be accessible at http://localhost:8080.
 
@@ -44,6 +44,6 @@ Available commands are listed in the help page:
 
 To use the CLI, navigate to the `cmd/cli` directory and execute the appropriate commands. For example:
 
-`go run main.go migrate`
+```go run main.go migrate```
 or
-`go run main.go get:todos`
+```go run main.go get:todos```
