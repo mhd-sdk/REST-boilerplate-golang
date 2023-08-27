@@ -40,5 +40,10 @@ Available commands are listed in the help page:
 
 ![CLI Help page](./docs/cli-help.png)
 
-Usage
-To use the CLI, navigate to the cli directory and execute the appropriate commands. For example:
+### Usage
+
+To use the CLI, navigate to the `cmd/cli` directory and execute the appropriate commands. For example:
+
+`go run main.go migrate`
+or
+`go run main.go get:todos`
