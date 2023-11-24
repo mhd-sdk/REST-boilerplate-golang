@@ -12,7 +12,5 @@
 /bin/
 /tmp/
 
-go.sum
-
 .vscode/
 
