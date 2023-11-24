@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+
+  db:
+      image: mariadb
+      ports:
+        - "3306:3306"
+      environment:
+        MYSQL_ROOT_PASSWORD: 123poi
+        MYSQL_USER: GOLANG
+        MYSQL_PASSWORD: 123poi
+
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/app
+    environment:
+      - GO_ENV=production
+      - use_docker_db_container=true
+    depends_on:
+      - db
+     
+      
+volumes:
+  go_cache:
+

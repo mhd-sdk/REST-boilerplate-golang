@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+
 	"example.com/todo-app/database"
 	"example.com/todo-app/docs"
 	"example.com/todo-app/pkg/api_handlers"
@@ -33,6 +35,7 @@ func main() {
 	viper.SetConfigFile("./../../.env")
 	viper.ReadInConfig()
 	port := viper.GetString("API_PORT")
+	fmt.Println("port:" + port)
 
 	// init database connection
 	database.Init()
@@ -52,5 +55,5 @@ func main() {
 			todos.PUT("/:id", api_handlers.EditTodo)
 		}
 	}
-	router.Run("127.0.0.1:" + port)
+	router.Run("0.0.0.0:" + port)
 }

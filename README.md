@@ -1,11 +1,10 @@
-# Go-Todo Project
+# Golang rest boilerplate
 
-The Go-Todo project is a Golang application that consists of an API and a CLI tool. The API provides CRUD (Create, Read, Update, Delete) operations for a todo list, while the CLI tool allows you to manage migrations, list todos, and create new todos.
-The goal of this project is to learn the goland language and its ecosystem.
+This boilerplate contain an API and a CLI tool. The API provides CRUD (Create, Read, Update, Delete) operations for a todo list, while the CLI tool allows you to manage migrations, list todos, and create new todos.
 
 ## API
 
-The API component of the project is responsible for handling interactions with the todo list.
+The API component of the project is responsible for handling interactions with a todo list.
 
 ### Endpoints
 
@@ -23,7 +22,15 @@ Update the details of a todo item. You can provide the new title and description
 
 A postman collection is provided in `docs/postman_collection.json`
 
-### Usage
+### Usage with docker
+
+To run the docker stack, simply copy paste the .env.example file to .env, then use the following command:
+
+```bash
+docker compose up --build
+```
+
+### Usage for contributors
 
 first copy paste the .env.example file to .env and change the values accordingly to your database configuration
 
